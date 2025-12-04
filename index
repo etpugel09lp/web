@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CETPRO UGEL 09 - Formación Técnica de Calidad</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Portal oficial del CETPRO UGEL 09 Huaura: formación técnica profesional, monitoreo, titulación, oferta formativa y servicios institucionales.">
+    <meta name="keywords" content="CETPRO, UGEL 09, Huaura, Educación Técnica, Formación Profesional, MINEDU, Perú">
+    <meta name="author" content="CETPRO UGEL 09 Huaura">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://coopsi.com.pe/wp-content/uploads/2023/06/LOGOS-CONVENIOS-10-1024x1024.png" type="image/png">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Animaciones (AOS) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Estilos Personalizados -->
+    <style>
+        :root {
+            --azul-ugel: #1e3a5f;
+            --celeste-ugel: #0d6efd;
+            --gris-fondo: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+
+        /* --- NAVBAR --- */
+        .navbar {
+            background-color: white !important;
+            border-bottom: 3px solid var(--celeste-ugel);
+        }
+        .navbar-brand img {
+            height: 45px;
+        }
+
+        /* --- HERO --- */
+        #hero {
+            background: linear-gradient(rgba(10, 37, 75, 0.65), rgba(10, 37, 75, 0.65)), 
+                        url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 140px 0;
+            position: relative;
+        }
+        #hero h1 {
+            font-weight: 700;
+            font-size: 3.2rem;
+        }
+        #hero p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+        #hero .btn {
+            border-radius: 30px;
+            padding: 12px 30px;
+            font-weight: 600;
+        }
+
+        /* --- SECCIONES --- */
+        .section-title {
+            font-weight: 700;
+            color: var(--azul-ugel);
+            margin-bottom: 40px;
+        }
+
+        /* --- TARJETAS DE SERVICIO --- */
+        .service-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 2.5rem;
+            background-color: #fff;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .service-card .icon {
+            font-size: 3.5rem;
+            color: var(--celeste-ugel);
+            margin-bottom: 1.5rem;
+        }
+
+        /* --- SECCIÓN NOSOTROS --- */
+        #nosotros {
+            background-color: var(--gris-fondo);
+        }
+        #nosotros p {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* --- NOTICIAS --- */
+        #noticias {
+            background-color: var(--gris-fondo);
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: var(--azul-ugel);
+            color: white;
+        }
+        footer a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: white;
+        }
+
+        /* --- RESPONSIVIDAD --- */
+        @media (max-width: 768px) {
+            #hero h1 {
+                font-size: 2.3rem;
+            }
+            #hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="https://coopsi.com.pe/wp-content/uploads/2023/06/LOGOS-CONVENIOS-10-1024x1024.png" alt="Logo UGEL 09">
+                CETPRO UGEL 09
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#accesos-rapidos">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#noticias">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container" data-aos="fade-up">
+            <h1>CETPRO UGEL 09</h1>
+            <p>Formando el Futuro Técnico del Perú con Educación de Calidad.</p>
+            <a href="#accesos-rapidos" class="btn btn-primary btn-lg">Explorar Servicios</a>
+        </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="py-5 text-center">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title">Nuestra Misión</h2>
+            <p class="lead">
+                Brindar una formación técnica integral, innovadora y de calidad, que permita a los estudiantes desarrollarse profesionalmente y contribuir al desarrollo sostenible de nuestra región y del país.
+            </p>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="accesos-rapidos" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Acceso Directo</h2>
+            <div class="row g-4 mt-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Monitoreo y Seguimiento</h3>
+                        <p>Aplicativo para seguimiento de observaciones en gestión, exclusivo para directivos.</p>
+                        <a href="https://script.google.com/a/macros/perueduca.edu.pe/s/AKfycbxTMqTmKnTwRyE_cCNYk_rDBXTlk3i1fS2H3C8vndJ3MjxOX5BBvAgL0MWyaiZeldat7w/exec" target="_blank" class="btn btn-outline-primary mt-3">Ingresar</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-file-certificate"></i></div>
+                        <h3>Registro de Certificados</h3>
+                        <p>Aplicativo de registro de certificados emitidos por los CETPRO UGEL 09 Huaura.</p>
+                        <a href="#" class="btn btn-outline-secondary mt-3 disabled">Próximamente</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>Titulación</h3>
+                        <p>Registro digital de títulos emitidos por los CETPRO UGEL 09 Huaura.</p>
+                        <a href="https://script.google.com/a/macros/perueduca.edu.pe/s/AKfycbxbh_3A3sVSQqHUH8mXpQur5G2MydYF-tdpBkf3kSJSOhbgBJLdpvXNV6EEbaqsT23JVQ/exec" target="_blank" class="btn btn-outline-primary mt-3">Ingresar</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-book-open-reader"></i></div>
+                        <h3>Oferta Formativa</h3>
+                        <p>Aplicativo para gestión y autorización de la oferta formativa CETPRO.</p>
+                        <a href="https://script.google.com/a/macros/perueduca.edu.pe/s/AKfycbx5Ii2EzqZLs_zlsXk5gNfXJYdfyFOWiOM-HkaW5WUBmAJJqjiwNcwzhvVmUTsUIkQW/exec" target="_blank" class="btn btn-outline-primary mt-3">Ingresar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOTICIAS -->
+    <section id="noticias" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Noticias y Novedades</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Propuesta de Norma Técnica para CETPROs</h5>
+                            <p class="text-muted">Plazo para aportes: 27 de Octubre</p>
+                            <p class="flex-grow-1">El MINEDU recibe aportes sobre la norma que optimiza la ETP y da inicio al proceso de licenciamiento.</p>
+                            <a href="https://forms.office.com/r/N9JEy634C2" target="_blank" class="btn btn-sm btn-primary mt-auto">Enviar Aportes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Concurso de Proyectos de Innovación 2025</h5>
+                            <p class="text-muted">Promovido por la DRELP</p>
+                            <p class="flex-grow-1">Invitación a presentar proyectos innovadores en el marco del concurso "Sembrando excelencia en la Región Lima".</p>
+                            <a href="#" class="btn btn-sm btn-primary mt-auto">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <h5 class="fw-bold">CETPRO UGEL 09</h5>
+                    <p>Unidad de Gestión Educativa Local N° 09 - Huaura.</p>
+                    <p>Comprometidos con la formación técnica de calidad para el desarrollo regional y nacional.</p>
+                </div>
+                <div class="col-lg-3">
+                    <h6>Contacto</h6>
+                    <ul class="list-unstyled small">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Av. San Martín 436, Huacho</li>
+                        <li><i class="fas fa-phone me-2"></i> (01) 232-6143</li>
+                        <li><i class="fas fa-envelope me-2"></i> mesadepartes@ugel09.gob.pe</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6>Síguenos</h6>
+                    <a href="https://web.facebook.com/cetprosugel09" target="_blank" class="text-light fs-4 me-3"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.whatsapp.com/channel/0029VaGchuwFSAsv46wCsY3t" target="_blank" class="text-light fs-4 me-3"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="text-light fs-4"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <hr class="border-light">
+            <p class="text-center small mb-0">&copy; 2025 CETPRO UGEL 09. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS y AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
