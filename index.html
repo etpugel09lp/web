@@ -41,7 +41,7 @@
         .navbar-brand {
             color: var(--primary-color) !important;
             font-weight: 700;
-            font-size: 1.2rem;
+            font-size: 1.1rem; /* Ajuste leve para móviles */
         }
         .nav-link {
             color: var(--text-dark) !important;
@@ -53,19 +53,16 @@
             color: var(--secondary-color) !important;
         }
 
-        /* --- Hero Section (DISEÑO NUEVO Y CORREGIDO) --- */
+        /* --- Hero Section --- */
         #hero {
             position: relative;
-            /* Degradado más profesional y legible */
             background: linear-gradient(180deg, rgba(0, 51, 102, 0.95) 0%, rgba(13, 110, 253, 0.85) 100%), 
                         url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop');
             background-size: cover;
             background-position: center top;
             color: white;
-            /* Altura ajustada: más compacto */
             padding: 100px 0 120px 0; 
             text-align: center;
-            /* BORDE CURVO CSS (Imposible que se rompa) */
             border-radius: 0 0 50px 50px;
             margin-bottom: 40px;
             box-shadow: 0 10px 30px rgba(0,51,102, 0.15);
@@ -115,7 +112,7 @@
             background: white;
             border: none;
             border-radius: 16px;
-            padding: 2.5rem 2rem;
+            padding: 2rem 1.5rem; /* Padding ajustado */
             height: 100%;
             text-align: center;
             box-shadow: 0 4px 20px rgba(0,0,0,0.05);
@@ -132,16 +129,16 @@
         }
 
         .icon-box {
-            width: 70px;
-            height: 70px;
+            width: 60px;
+            height: 60px;
             background: rgba(13, 110, 253, 0.1);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
             color: var(--secondary-color);
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             transition: all 0.3s;
         }
 
@@ -151,26 +148,26 @@
         }
 
         .service-card h3 {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 700;
             color: var(--primary-color);
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
         }
 
         .service-card p {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: #666;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
         }
 
         .btn-outline-custom {
-            margin-top: auto; /* Empuja el botón al fondo */
+            margin-top: auto;
             border-radius: 50px;
-            padding: 8px 25px;
+            padding: 6px 20px;
             border: 2px solid var(--secondary-color);
             color: var(--secondary-color);
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             transition: all 0.3s;
             text-decoration: none;
             display: inline-block;
@@ -240,7 +237,7 @@
         </div>
     </nav>
 
-    <!-- Banner (Hero) Solucionado: Sin cortes, con esquinas redondeadas -->
+    <!-- Banner (Hero) -->
     <section id="hero">
         <div class="container">
             <h1>CETPRO UGEL 09</h1>
@@ -248,37 +245,37 @@
         </div>
     </section>
 
-    <!-- Servicios -->
+    <!-- Servicios y Materiales (4 columnas) -->
     <section id="accesos-rapidos">
         <div class="container">
             <div class="section-header">
                 <h2>Servicios Digitales</h2>
-                <p class="text-muted">Plataformas de gestión institucional</p>
+                <p class="text-muted">Plataformas de gestión y recursos educativos</p>
             </div>
             
             <div class="row g-4 justify-content-center">
-                <!-- Tarjeta 1 -->
-                <div class="col-lg-4 col-md-6">
+                <!-- Tarjeta 1: Monitoreo -->
+                <div class="col-lg-3 col-md-6">
                     <div class="service-card">
                         <div class="icon-box"><i class="fas fa-chart-pie"></i></div>
-                        <h3>Monitoreo y Gestión</h3>
-                        <p>Seguimiento de recomendaciones, observaciones e indicadores de gestión directiva.</p>
+                        <h3>Monitoreo</h3>
+                        <p>Seguimiento de recomendaciones e indicadores de gestión directiva.</p>
                         <a href="https://script.google.com/a/macros/perueduca.edu.pe/s/AKfycbxTMqTmKnTwRyE_cCNYk_rDBXTlk3i1fS2H3C8vndJ3MjxOX5BBvAgL0MWyaiZeldat7w/exec" target="_blank" class="btn-outline-custom">Acceder</a>
                     </div>
                 </div>
 
-                <!-- Tarjeta 2 -->
-                <div class="col-lg-4 col-md-6">
+                <!-- Tarjeta 2: Titulación -->
+                <div class="col-lg-3 col-md-6">
                     <div class="service-card">
                         <div class="icon-box"><i class="fas fa-user-graduate"></i></div>
-                        <h3>Registro de Títulos</h3>
+                        <h3>Títulos</h3>
                         <p>Plataforma oficial para el registro y validación de títulos técnicos.</p>
                         <a href="#" class="btn-outline-custom">Acceder</a>
                     </div>
                 </div>
 
-                <!-- Tarjeta 3 -->
-                <div class="col-lg-4 col-md-6">
+                <!-- Tarjeta 3: Oferta Formativa -->
+                <div class="col-lg-3 col-md-6">
                     <div class="service-card">
                         <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
                         <h3>Oferta Formativa</h3>
@@ -286,11 +283,21 @@
                         <a href="https://script.google.com/a/macros/perueduca.edu.pe/s/AKfycbx5Ii2EzqZLs_zlsXk5gNfXJYdfyFOWiOM-HkaW5WUBmAJJqjiwNcwzhvVmUTsUIkQW/exec" target="_blank" class="btn-outline-custom">Gestionar</a>
                     </div>
                 </div>
+
+                <!-- Tarjeta 4: Material Pedagógico (NUEVO) -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <div class="icon-box"><i class="fas fa-book-reader"></i></div>
+                        <h3>Materiales</h3>
+                        <p>Material de gestión y pedagógico para docentes y directivos.</p>
+                        <a href="https://script.google.com/a/macros/perueduca.edu.pe/s/AKfycbwYKVBY4Uop4jOH8FwIFm92bFX2PZnhy8dlCT3zAd8KPzRDcnDompBGJPdlYH40XXNtYQ/exec" target="_blank" class="btn-outline-custom">Ver Recursos</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     
-    <!-- Aplicativo Embebido -->
+    <!-- Aplicativo Embebido (Hitos) -->
     <section id="hitos-cumplimiento" class="py-5">
         <div class="container">
             <div class="section-header">
