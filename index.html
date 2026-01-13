@@ -3,345 +3,348 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CETPRO UGEL 09 - Formación Técnica de Calidad</title>
-
-    <!-- SEO -->
-    <meta name="description" content="Portal oficial del CETPRO UGEL 09 Huaura: formación técnica profesional, monitoreo, titulación, oferta formativa y servicios institucionales.">
-    <meta name="keywords" content="CETPRO, UGEL 09, Huaura, Educación Técnica, Formación Profesional, MINEDU, Perú">
-    <meta name="author" content="CETPRO UGEL 09 Huaura">
-    
-    <!-- Open Graph / Facebook (Opcional pero recomendado para compartir) -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="CETPRO UGEL 09 Huaura">
-    <meta property="og:description" content="Formando el Futuro Técnico del Perú con Educación de Calidad.">
-    <meta property="og:image" content="https://coopsi.com.pe/wp-content/uploads/2023/06/LOGOS-CONVENIOS-10-1024x1024.png">
-
-    <!-- Favicon -->
-    <!-- RECOMENDACIÓN: Descarga esta imagen y súbela a tu GitHub para evitar que se rompa el enlace -->
-    <link rel="icon" href="https://coopsi.com.pe/wp-content/uploads/2023/06/LOGOS-CONVENIOS-10-1024x1024.png" type="image/png">
+    <title>CETPRO UGEL 09 - Excelencia Educativa</title>
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Animaciones (AOS) -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Estilos Personalizados -->
     <style>
         :root {
-            --azul-ugel: #1e3a5f;
-            --celeste-ugel: #0d6efd;
-            --gris-fondo: #f8f9fa;
-        }
-
-        html {
-            scroll-behavior: smooth; /* Desplazamiento suave al navegar */
+            --primary-color: #003366; 
+            --secondary-color: #0d6efd; 
+            --accent-color: #D91023; 
+            --bg-light: #f4f7f9;
+            --text-dark: #2c3e50;
         }
 
         body {
             font-family: 'Poppins', sans-serif;
-            color: #333;
-            overflow-x: hidden; /* Evita scroll horizontal indeseado */
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            overflow-x: hidden;
         }
 
-        /* --- NAVBAR --- */
+        /* --- Navbar --- */
         .navbar {
-            background-color: white !important;
-            border-bottom: 3px solid var(--celeste-ugel);
+            background: white !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 0.8rem 0;
         }
-        .navbar-brand img {
-            height: 45px;
-            margin-right: 10px;
-        }
-
-        /* --- HERO --- */
-        #hero {
-            /* Se añadió un degradado más oscuro para mejorar la lectura del texto blanco */
-            background: linear-gradient(rgba(10, 37, 75, 0.75), rgba(10, 37, 75, 0.75)), 
-                        url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop') no-repeat center center;
-            background-size: cover;
-            color: white;
-            text-align: center;
-            padding: 140px 0;
-            position: relative;
-        }
-        #hero h1 {
+        .navbar-brand {
+            color: var(--primary-color) !important;
             font-weight: 700;
-            font-size: 3.2rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-        #hero p {
             font-size: 1.2rem;
-            font-weight: 300;
-            margin-bottom: 30px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         }
-        #hero .btn {
-            border-radius: 30px;
-            padding: 12px 30px;
-            font-weight: 600;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        .nav-link {
+            color: var(--text-dark) !important;
+            font-weight: 500;
+            margin: 0 10px;
+            font-size: 0.9rem;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--secondary-color) !important;
         }
 
-        /* --- SECCIONES --- */
-        .section-title {
-            font-weight: 700;
-            color: var(--azul-ugel);
+        /* --- Hero Section (DISEÑO NUEVO Y CORREGIDO) --- */
+        #hero {
+            position: relative;
+            /* Degradado más profesional y legible */
+            background: linear-gradient(180deg, rgba(0, 51, 102, 0.95) 0%, rgba(13, 110, 253, 0.85) 100%), 
+                        url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center top;
+            color: white;
+            /* Altura ajustada: más compacto */
+            padding: 100px 0 120px 0; 
+            text-align: center;
+            /* BORDE CURVO CSS (Imposible que se rompa) */
+            border-radius: 0 0 50px 50px;
             margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,51,102, 0.15);
+        }
+        
+        #hero h1 {
+            font-weight: 800;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        
+        #hero p {
+            font-size: 1.1rem;
+            font-weight: 300;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* --- Títulos --- */
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-header h2 {
+            font-weight: 700;
+            color: var(--primary-color);
             position: relative;
             display: inline-block;
+            padding-bottom: 10px;
         }
-        /* Pequeña línea decorativa debajo de los títulos */
-        .section-title::after {
+        .section-header h2::before {
             content: '';
-            display: block;
+            position: absolute;
             width: 50px;
             height: 3px;
-            background: var(--celeste-ugel);
-            margin: 10px auto 0;
+            background: var(--accent-color);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
-        /* --- TARJETAS DE SERVICIO --- */
+        /* --- Tarjetas (Cards) --- */
         .service-card {
+            background: white;
             border: none;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            text-align: center;
-            padding: 2.5rem;
-            background-color: #fff;
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
             height: 100%;
-            transition: all 0.3s ease;
-            border-top: 4px solid transparent;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
         }
+
         .service-card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-5px);
             box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-            border-top: 4px solid var(--celeste-ugel);
         }
-        .service-card .icon {
-            font-size: 3.5rem;
-            color: var(--celeste-ugel);
+
+        .icon-box {
+            width: 70px;
+            height: 70px;
+            background: rgba(13, 110, 253, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: var(--secondary-color);
+            font-size: 1.8rem;
+            transition: all 0.3s;
+        }
+
+        .service-card:hover .icon-box {
+            background: var(--secondary-color);
+            color: white;
+        }
+
+        .service-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            font-size: 0.9rem;
+            color: #666;
             margin-bottom: 1.5rem;
         }
 
-        /* --- SECCIÓN NOSOTROS --- */
-        #nosotros {
-            background-color: var(--gris-fondo);
-        }
-        #nosotros p {
-            max-width: 800px;
-            margin: auto;
-        }
-
-        /* --- NOTICIAS --- */
-        #noticias {
-            background-color: #fff;
-        }
-        .card {
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            transition: 0.3s;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.12);
-        }
-
-        /* --- FOOTER --- */
-        footer {
-            background-color: var(--azul-ugel);
-            color: white;
-        }
-        footer a {
-            color: #adb5bd;
+        .btn-outline-custom {
+            margin-top: auto; /* Empuja el botón al fondo */
+            border-radius: 50px;
+            padding: 8px 25px;
+            border: 2px solid var(--secondary-color);
+            color: var(--secondary-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s;
             text-decoration: none;
-            transition: color 0.3s;
+            display: inline-block;
         }
-        footer a:hover {
+        .btn-outline-custom:hover {
+            background: var(--secondary-color);
             color: white;
         }
 
-        /* --- RESPONSIVIDAD --- */
+        /* --- App Container (Iframe) --- */
+        .app-container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #eee;
+        }
+        .app-header-deco {
+            display: flex; gap: 8px; padding: 12px 20px; background: #f8f9fa; border-bottom: 1px solid #e9ecef;
+        }
+        .dot { width: 12px; height: 12px; border-radius: 50%; }
+        .dot.red { background: #ff5f56; }
+        .dot.yellow { background: #ffbd2e; }
+        .dot.green { background: #27c93f; }
+
+        /* --- Footer --- */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 0 1rem 0;
+            margin-top: 60px;
+        }
+        .social-link {
+            width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%;
+            display: inline-flex; align-items: center; justify-content: center;
+            color: white; margin-right: 10px; transition: 0.3s; text-decoration: none;
+        }
+        .social-link:hover { background: var(--secondary-color); transform: translateY(-3px); color: white; }
+
         @media (max-width: 768px) {
-            #hero h1 {
-                font-size: 2.3rem;
-            }
-            #hero p {
-                font-size: 1rem;
-            }
-            .section-title {
-                font-size: 1.8rem;
-            }
+            #hero { padding: 80px 0 100px 0; border-radius: 0 0 30px 30px; }
+            #hero h1 { font-size: 2.2rem; }
         }
     </style>
 </head>
-
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+    <!-- Menú -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
-                <img src="https://coopsi.com.pe/wp-content/uploads/2023/06/LOGOS-CONVENIOS-10-1024x1024.png" alt="Logo UGEL 09">
-                <span>CETPRO UGEL 09</span>
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="https://coopsi.com.pe/wp-content/uploads/2023/06/LOGOS-CONVENIOS-10-1024x1024.png" alt="Logo" height="40" class="me-2">
+                CETPRO UGEL 09
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto text-center">
-                    <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#accesos-rapidos">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#noticias">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hitos-cumplimiento">Hitos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#footer">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- HERO -->
-    <section id="hero" class="d-flex align-items-center">
-        <div class="container" data-aos="fade-up">
+    <!-- Banner (Hero) Solucionado: Sin cortes, con esquinas redondeadas -->
+    <section id="hero">
+        <div class="container">
             <h1>CETPRO UGEL 09</h1>
-            <p>Formando el Futuro Técnico del Perú con Educación de Calidad.</p>
-            <a href="#accesos-rapidos" class="btn btn-primary btn-lg">Explorar Servicios</a>
+            <p>Formación técnica de excelencia para impulsar el desarrollo profesional en la Región Lima.</p>
         </div>
     </section>
 
-    <!-- NOSOTROS -->
-    <section id="nosotros" class="py-5 text-center">
-        <div class="container" data-aos="fade-up">
-            <h2 class="section-title">Nuestra Misión</h2>
-            <p class="lead text-secondary">
-                Brindar una formación técnica integral, innovadora y de calidad, que permita a los estudiantes desarrollarse profesionalmente y contribuir al desarrollo sostenible de nuestra región y del país.
-            </p>
-        </div>
-    </section>
-
-    <!-- SERVICIOS -->
-    <section id="accesos-rapidos" class="py-5 bg-light">
+    <!-- Servicios -->
+    <section id="accesos-rapidos">
         <div class="container">
-            <h2 class="text-center section-title">Acceso Directo</h2>
-            <div class="row g-4 mt-4">
+            <div class="section-header">
+                <h2>Servicios Digitales</h2>
+                <p class="text-muted">Plataformas de gestión institucional</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
                 <!-- Tarjeta 1 -->
-                <div class="col-lg-3 col-md-6" data-aos="fade-up">
-                    <div class="service-card d-flex flex-column">
-                        <div class="icon"><i class="fas fa-chart-line"></i></div>
-                        <h3>Monitoreo y Seguimiento</h3>
-                        <p class="flex-grow-1">Aplicativo para seguimiento de observaciones en gestión, exclusivo para directivos.</p>
-                        <a href="https://script.google.com/a/macros/perueduca.edu.pe/s/AKfycbxTMqTmKnTwRyE_cCNYk_rDBXTlk3i1fS2H3C8vndJ3MjxOX5BBvAgL0MWyaiZeldat7w/exec" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary mt-3">Ingresar</a>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="icon-box"><i class="fas fa-chart-pie"></i></div>
+                        <h3>Monitoreo y Gestión</h3>
+                        <p>Seguimiento de recomendaciones, observaciones e indicadores de gestión directiva.</p>
+                        <a href="https://script.google.com/a/macros/perueduca.edu.pe/s/AKfycbxTMqTmKnTwRyE_cCNYk_rDBXTlk3i1fS2H3C8vndJ3MjxOX5BBvAgL0MWyaiZeldat7w/exec" target="_blank" class="btn-outline-custom">Acceder</a>
                     </div>
                 </div>
+
                 <!-- Tarjeta 2 -->
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-card d-flex flex-column">
-                        <div class="icon"><i class="fas fa-file-certificate"></i></div>
-                        <h3>Registro de Certificados</h3>
-                        <p class="flex-grow-1">Aplicativo de registro de certificados emitidos por los CETPRO UGEL 09 Huaura.</p>
-                        <button class="btn btn-outline-secondary mt-3 disabled" aria-disabled="true">Próximamente</button>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="icon-box"><i class="fas fa-user-graduate"></i></div>
+                        <h3>Registro de Títulos</h3>
+                        <p>Plataforma oficial para el registro y validación de títulos técnicos.</p>
+                        <a href="#" class="btn-outline-custom">Acceder</a>
                     </div>
                 </div>
+
                 <!-- Tarjeta 3 -->
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-card d-flex flex-column">
-                        <div class="icon"><i class="fas fa-graduation-cap"></i></div>
-                        <h3>Titulación</h3>
-                        <p class="flex-grow-1">Registro digital de títulos emitidos por los CETPRO UGEL 09 Huaura.</p>
-                        <a href="https://script.google.com/a/macros/perueduca.edu.pe/s/AKfycbxbh_3A3sVSQqHUH8mXpQur5G2MydYF-tdpBkf3kSJSOhbgBJLdpvXNV6EEbaqsT23JVQ/exec" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary mt-3">Ingresar</a>
-                    </div>
-                </div>
-                <!-- Tarjeta 4 -->
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-card d-flex flex-column">
-                        <div class="icon"><i class="fas fa-book-open-reader"></i></div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
                         <h3>Oferta Formativa</h3>
-                        <p class="flex-grow-1">Aplicativo para gestión y autorización de la oferta formativa CETPRO.</p>
-                        <a href="https://script.google.com/a/macros/perueduca.edu.pe/s/AKfycbx5Ii2EzqZLs_zlsXk5gNfXJYdfyFOWiOM-HkaW5WUBmAJJqjiwNcwzhvVmUTsUIkQW/exec" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary mt-3">Ingresar</a>
+                        <p>Gestión y autorización de programas de estudio y capacitación.</p>
+                        <a href="https://script.google.com/a/macros/perueduca.edu.pe/s/AKfycbx5Ii2EzqZLs_zlsXk5gNfXJYdfyFOWiOM-HkaW5WUBmAJJqjiwNcwzhvVmUTsUIkQW/exec" target="_blank" class="btn-outline-custom">Gestionar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Aplicativo Embebido -->
+    <section id="hitos-cumplimiento" class="py-5">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hitos de Licenciamiento</h2>
+                <p class="text-muted">Tablero de control y seguimiento</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="app-container">
+                        <div class="app-header-deco">
+                            <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+                        </div>
+                        <iframe 
+                            title="Aplicativo Hitos"
+                            style="width: 100%; height: 800px; border: none;"
+                            src="https://script.google.com/a/macros/perueduca.edu.pe/s/AKfycbz_N9JwNQGAgTAhBtoT-n8QCFeKAAPzdxGbUPwF8zPWC5GKqPMb2HFRzv32QNg9wQ2L/exec">
+                        </iframe>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- NOTICIAS -->
-    <section id="noticias" class="py-5">
+    <!-- Footer -->
+    <footer id="footer">
         <div class="container">
-            <h2 class="text-center section-title">Noticias y Novedades</h2>
-            <div class="row g-4 justify-content-center mt-2">
-                <div class="col-md-6" data-aos="fade-right">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column p-4">
-                            <h5 class="card-title fw-bold text-primary">Propuesta de Norma Técnica para CETPROs</h5>
-                            <p class="text-muted small"><i class="far fa-calendar-alt me-1"></i> Plazo: 27 de Octubre</p>
-                            <p class="flex-grow-1">El MINEDU recibe aportes sobre la norma que optimiza la ETP y da inicio al proceso de licenciamiento. Participa en la consulta pública.</p>
-                            <a href="https://forms.office.com/r/N9JEy634C2" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary w-100 mt-auto">Enviar Aportes</a>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-lg-5 mb-4">
+                    <h5>CETPRO UGEL 09</h5>
+                    <p class="small opacity-75">Educación técnica productiva para el desarrollo de Huaura.</p>
                 </div>
-                <div class="col-md-6" data-aos="fade-left">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column p-4">
-                            <h5 class="card-title fw-bold text-primary">Concurso de Innovación 2025</h5>
-                            <p class="text-muted small"><i class="fas fa-map-marker-alt me-1"></i> Región Lima</p>
-                            <p class="flex-grow-1">Invitación a presentar proyectos innovadores en el marco del concurso "Sembrando excelencia en la Región Lima", promovido por la DRELP.</p>
-                            <a href="#" class="btn btn-sm btn-outline-primary w-100 mt-auto">Más Información</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer id="footer" class="py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-5">
-                    <h5 class="fw-bold mb-3">CETPRO UGEL 09</h5>
-                    <p>Unidad de Gestión Educativa Local N° 09 - Huaura.</p>
-                    <p class="small opacity-75">Comprometidos con la formación técnica de calidad para el desarrollo regional y nacional.</p>
-                </div>
-                <div class="col-lg-3">
-                    <h6 class="fw-bold mb-3">Contacto</h6>
+                <div class="col-lg-3 mb-4">
+                    <h5>Contacto</h5>
                     <ul class="list-unstyled small">
-                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-info"></i> Av. San Martín 436, Huacho</li>
-                        <li class="mb-2"><i class="fas fa-phone me-2 text-info"></i> (01) 232-6143</li>
-                        <li class="mb-2"><i class="fas fa-envelope me-2 text-info"></i> mesadepartes@ugel09.gob.pe</li>
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-warning"></i> Av. San Martín 436, Huacho</li>
+                        <li><i class="fas fa-phone-alt me-2 text-warning"></i> (01) 232-6143</li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
-                    <h6 class="fw-bold mb-3">Síguenos</h6>
-                    <div class="d-flex gap-3">
-                        <a href="https://web.facebook.com/cetprosugel09" target="_blank" rel="noopener noreferrer" class="text-light fs-3" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
-                        <a href="https://www.whatsapp.com/channel/0029VaGchuwFSAsv46wCsY3t" target="_blank" rel="noopener noreferrer" class="text-light fs-3" aria-label="WhatsApp"><i class="fab fa-whatsapp-square"></i></a>
-                        <a href="#" class="text-light fs-3" aria-label="YouTube"><i class="fab fa-youtube-square"></i></a>
+                <div class="col-lg-4 mb-4">
+                    <h5>Redes Sociales</h5>
+                    <div>
+                        <a href="https://web.facebook.com/cetprosugel09" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.whatsapp.com/channel/0029VaGchuwFSAsv46wCsY3t" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
-            <hr class="border-secondary mt-4 mb-4">
-            <div class="text-center small opacity-75">
-                <p class="mb-0">&copy; 2025 CETPRO UGEL 09. Todos los derechos reservados.</p>
+            <hr style="border-color: rgba(255,255,255,0.1);">
+            <div class="text-center small opacity-50">
+                &copy; 2025 UGEL 09 Huaura.
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS y AOS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // Inicializar animaciones
-        AOS.init({
-            duration: 800,
-            once: true // La animación solo ocurre una vez al bajar
-        });
-    </script>
 </body>
 </html>
