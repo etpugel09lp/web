@@ -41,7 +41,7 @@
         .navbar-brand {
             color: var(--primary-color) !important;
             font-weight: 700;
-            font-size: 1.1rem; /* Ajuste leve para móviles */
+            font-size: 1.1rem;
         }
         .nav-link {
             color: var(--text-dark) !important;
@@ -112,7 +112,7 @@
             background: white;
             border: none;
             border-radius: 16px;
-            padding: 2rem 1.5rem; /* Padding ajustado */
+            padding: 2rem 1.5rem;
             height: 100%;
             text-align: center;
             box-shadow: 0 4px 20px rgba(0,0,0,0.05);
@@ -270,21 +270,26 @@
                         <div class="icon-box"><i class="fas fa-user-graduate"></i></div>
                         <h3>Títulos</h3>
                         <p>Plataforma oficial para el registro y validación de títulos técnicos.</p>
-                        <a href="https://script.google.com/a/macros/perueduca.edu.pe/s/AKfycbxbh_3A3sVSQqHUH8mXpQur5G2MydYF-tdpBkf3kSJSOhbgBJLdpvXNV6EEbaqsT23JVQ/exec" class="btn-outline-custom">Acceder</a>
+                        <a href="#" class="btn-outline-custom">Acceder</a>
                     </div>
                 </div>
 
-                <!-- Tarjeta 3: Oferta Formativa -->
+                <!-- Tarjeta 3: Oferta Formativa (CON DOBLE BOTÓN) -->
                 <div class="col-lg-3 col-md-6">
                     <div class="service-card">
                         <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
                         <h3>Oferta Formativa</h3>
                         <p>Gestión y autorización de programas de estudio y capacitación.</p>
-                        <a href="https://script.google.com/a/macros/perueduca.edu.pe/s/AKfycbx5Ii2EzqZLs_zlsXk5gNfXJYdfyFOWiOM-HkaW5WUBmAJJqjiwNcwzhvVmUTsUIkQW/exec" target="_blank" class="btn-outline-custom">Gestionar</a>
+                        
+                        <!-- Contenedor de botones apilados -->
+                        <div class="d-flex flex-column gap-2 w-100 mt-auto px-2">
+                            <a href="https://script.google.com/a/macros/perueduca.edu.pe/s/AKfycbx5Ii2EzqZLs_zlsXk5gNfXJYdfyFOWiOM-HkaW5WUBmAJJqjiwNcwzhvVmUTsUIkQW/exec" target="_blank" class="btn-outline-custom w-100" style="margin-top: 0;">Gestionar</a>
+                            <a href="https://script.google.com/a/macros/perueduca.edu.pe/s/AKfycbz690SUEIpLIeUjSffi1UzdmhH-GjHCcF3rbEWzPV5u5vQ2NyzfJF21Dc3nMJEiiIbQ/exec" target="_blank" class="btn-outline-custom w-100" style="margin-top: 0;">Programar 2026-1</a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Tarjeta 4: Material Pedagógico (NUEVO) -->
+                <!-- Tarjeta 4: Material Pedagógico -->
                 <div class="col-lg-3 col-md-6">
                     <div class="service-card">
                         <div class="icon-box"><i class="fas fa-book-reader"></i></div>
@@ -301,7 +306,7 @@
     <section id="hitos-cumplimiento" class="py-5">
         <div class="container">
             <div class="section-header">
-                <h2>Hitos o actividades en la gestión de los CETPRO</h2>
+                <h2>Hitos de Licenciamiento</h2>
                 <p class="text-muted">Tablero de control y seguimiento</p>
             </div>
             
@@ -347,7 +352,7 @@
             </div>
             <hr style="border-color: rgba(255,255,255,0.1);">
             <div class="text-center small opacity-50">
-                &copy; 2025 UGEL 09 Huaura / Desarrollado Por Romel Rosales.
+                &copy; 2025 UGEL 09 Huaura.
             </div>
         </div>
     </footer>
